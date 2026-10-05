@@ -1,0 +1,65 @@
+:root {
+    --dp-forest: #063f32;
+    --dp-emerald: #00a878;
+    --dp-gold: #ffc83d;
+    --dp-surface: #f8faf8;
+    --dp-translucent-green: #315f54;
+    --dp-ink: #101615;
+    --bs-primary: var(--dp-emerald);
+    --bs-primary-rgb: 0, 168, 120;
+    --bs-body-color: var(--dp-ink);
+    --bs-body-bg: var(--dp-surface);
+    --bs-link-color: var(--dp-forest);
+    --bs-link-hover-color: var(--dp-emerald);
+    accent-color: var(--dp-emerald);
+}
+
+body {
+    color: var(--dp-ink);
+    background-color: var(--dp-surface);
+}
+
+.btn-primary,
+.btn-success {
+    border-color: var(--dp-emerald);
+    background-color: var(--dp-emerald);
+}
+
+.btn-primary:hover,
+.btn-success:hover,
+.btn-primary:focus,
+.btn-success:focus {
+    border-color: var(--dp-forest);
+    background-color: var(--dp-forest);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--dp-emerald);
+    box-shadow: 0 0 0 0.25rem rgb(0 168 120 / 18%);
+}
+
+.sidebar-wrapper {
+    background-color: var(--dp-forest);
+}
+
+.sidebar-wrapper .sidebar-link,
+.sidebar-wrapper .sidebar-title,
+.sidebar-wrapper .sidebar-main .sidebar-links li a {
+    color: var(--dp-surface);
+}
+
+.sidebar-wrapper .sidebar-link:hover,
+.sidebar-wrapper .sidebar-list.active > .sidebar-link,
+.sidebar-wrapper .sidebar-list.active > .sidebar-title {
+    color: var(--dp-gold);
+}
+
+.sidebar-wrapper .sidebar-link svg,
+.sidebar-wrapper .sidebar-title svg {
+    stroke: currentColor;
+}
+
+.page-header {
+    background-color: var(--dp-surface);
+}
