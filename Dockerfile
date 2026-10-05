@@ -58,6 +58,7 @@ RUN composer install \
     && a2enmod rewrite \
     && rm /etc/apache2/sites-enabled/000-default.conf \
     && cp docker/apache-vhost.conf /etc/apache2/sites-available/000-default.conf \
+    && a2ensite 000-default.conf \
     && cp docker/ports.conf /etc/apache2/ports.conf \
     && chmod +x docker/entrypoint.sh \
     && mkdir -p \
